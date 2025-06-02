@@ -1,7 +1,15 @@
 print ('============== Conversor Centímetros em Milímetros==================')
-md = int(input('Digite a medida em Centímetros: '))
-xc = md * 100
-xm = md * 1000
+md = float(input('Digite a medida em metros: '))
 
-print('O valor {} m é : valor {} cm'.format(md, xc))
-print('O valor {} m e : valor {} mm'.format(md, xm))
+xkm =md /1000
+xhm = md/100
+dam = md/10
+xcm = md * 100
+xmm = md * 1000
+
+print('A medida {}m corresponde a'.format(md))
+print('{}km'.format(xkm))
+print('{}hm'.format(xhm))
+print('{}dam'.format(dam))
+print('{:.0f}cm'.format(xcm))
+print('{:.0f}mm'.format(xmm))
