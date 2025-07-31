@@ -1,11 +1,14 @@
-frase = input('Digite o seu nome completo: ')
-
+frase = str(input('Digite o seu nome completo: ')).strip()
+# Essa função strip informa que essa string virar sem espaço antes e depois
 print (frase)
 print ('Todas as letras do seu nome com letra maiúscula:')
 print (frase.upper())
 print ('Todas as letra do seu nome com letra minúscula:')
 print (frase.lower())
 print ('Quantidade de letra do primeiro nome :')
-print ( len ( frase.split()[0]) )
+print ('O Tamanho do texto sem espaço é: {}'.format(len(frase) - frase.count(' ')))
+# Como podemos observar ultilizei a função len - count para retirar contar o tamanho do nome sem espaço no meio
+# função count conta os espaço
+print('Seu primeiro nome tem {} letras'.format(frase.find(' ')))
 
-print ( len ( frase.replace (' ')) )
+
