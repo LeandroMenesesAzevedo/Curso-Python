@@ -10,14 +10,17 @@ op = (int (input('\n''Qual opção acima deseja que o seu número seja convertid
 if op== 1:
     nb = bin(num)
     print(' O número digitado foi {}' .format(num))
-    print(' O valor  em binário é: \033[32m{}\33[0m'.format(nb))
+    #/ colocamos o [2: ] para tirar as duas primeiras casa  
+    print(' O valor  em binário é: \033[32m{}\33[0m'.format(nb [2: ]))
 elif op == 2:
     numo = oct(num)
     print ('O número digitado foi {}'.format (num))
-    print ('O valor em octal é : \033[32m{}\033[0m'.format(numo))
+    #/ colocamos o [2: ] para tirar as duas primeiras casa  
+    print ('O valor em octal é : \033[32m{}\033[0m'.format(num[2:]))
 elif op == 3:
     numh = hex(num)
     print (' O número digitado foi {}'.format (num))
-    print (' O valor em hexadecimal é: \033[32m{}\033[0m'.format(numh))
+    #/ colocamos o [2: ] para tirar as duas primeiras casa  
+    print (' O valor em hexadecimal é: \033[32m{}\033[0m'.format(numh [2:]))
 else:
     print('\033[31m OPÇÃO INVALÍDA\033[0m')
