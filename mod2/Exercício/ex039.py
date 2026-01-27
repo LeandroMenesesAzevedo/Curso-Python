@@ -10,4 +10,6 @@ elif idade > 18:
     print ('Se sim, apresente o certificado de reservista.')
 
 else:
+    saldo = 18 - idade 
     print ('Você ainda não possui idade suficiente para se alistar.')
+    print ('Retorne o alistamento da a {} anos.' .format(saldo))
