@@ -4,9 +4,11 @@ la = int(input( 'Digite o valor do primeiro lado: '))
 lb = int(input( 'Digite o valor do segundo lado: '))
 lc = int(input( 'Digite o valor do terceiro lado: '))
 
-soma = lb + lc # realizado a soma de dois lados para comparar
+if la < lb + lc and lb < la + lc and lc < la + lb:
+    print ('Esses segmentos formam um triângulo')
 
-if (la < soma ):
-    print ('não forma um triângulo')
-elif (la > soma):
-    print (' É um triângulo')
+    if la == lb == lc:
+        print ('Esse é um triângulo equilatero')
+
+else:
+    print (' Esses segmentos não formam triângulo')
