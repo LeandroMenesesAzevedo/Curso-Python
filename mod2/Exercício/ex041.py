@@ -8,7 +8,10 @@ if la < lb + lc and lb < la + lc and lc < la + lb:
     print ('Esses segmentos formam um triângulo')
 
     if la == lb == lc:
-        print ('Esse é um triângulo equilatero')
-
+        print ('Esse é um triângulo equilátero')
+    elif la != lb != lc !=la:
+        print ('Esse é um triângulo escaleno')
+    else: 
+        print ('Esse é um triângulo isóceles')
 else:
     print (' Esses segmentos não formam triângulo')
