@@ -10,3 +10,10 @@ print (''' Formas de Pagamento:
 ''')
 
 opcao = int(input(' Escolha uma opção: '))
+
+if opcao == 1:
+    desconto = compra * 0.10
+    valor = compra - desconto
+    print (' O valor foi pago à vista ')
+    print (' Houve um desconto de R${:.2f} total a pagar R${:.2f}'.format(desconto , valor))
+
