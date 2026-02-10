@@ -14,6 +14,14 @@ opcao = int(input(' Escolha uma opção: '))
 if opcao == 1:
     desconto = compra * 0.10
     valor = compra - desconto
-    print (' O valor foi pago à vista ')
+    print (' O valor será pago à vista ')
     print (' Houve um desconto de R${:.2f} total a pagar R${:.2f}'.format(desconto , valor))
-
+elif opcao == 2:
+    desconto = compra * 0.05
+    valor = compra - desconto
+    print (' O valor será pago à vista no cartão')
+    print (' Houve um desconto de R${:.2f} total a pagar R${:.2f}'.format(desconto, valor))
+elif opcao == 3:
+       valor = compra / 2
+       print ('O pagamento será parcelado em 2x no cartão')
+       print ('O valor pagor R${:.2f} valor das parcelas R${:.2f}'.format(compra, valor))
