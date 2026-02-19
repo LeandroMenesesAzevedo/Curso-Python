@@ -25,3 +25,9 @@ elif opcao == 3:
        valor = compra / 2
        print ('O pagamento será parcelado em 2x no cartão')
        print ('O valor pagor R${:.2f} valor das parcelas R${:.2f}'.format(compra, valor))
+elif opcao == 4:
+        parcela = int(input('Digite o número de parcelas que deseja: '))
+        total = parcela * 1.03
+        print('A quantidade de parcelas foi {} e ocorreu um acrescimo de 3% total a pagar: R$ {}'.format(parcela, total))
+else:
+      print('Opção inválida')
