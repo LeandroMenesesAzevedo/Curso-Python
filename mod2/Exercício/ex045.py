@@ -45,4 +45,15 @@ elif op == 2:
             print ('O computador escolheu {}'.format (itens[computador]))
             print('VOCÊ PERDEU')             
 elif op == 3:
-        print('teste')
+        if computador == 0:
+              print('Você escolheu a opção {}'.format(op))
+              print('O computador escolheu {}'.format(itens[computador]))
+              print('VOCÊ PERDEU')
+        elif computador == 1:
+              print('Você escolheu a opção {}'.format(op))
+              print('O computador escolheu {}'.format(itens[computador]))
+              print('VOCÊ VENCEU')
+        elif computador == 2:
+              print('Você escolheu a opção {}'.format(op))
+              print('O computador escolheu {}'.format(itens[computador]))
+              print('DEU EMPATE')
