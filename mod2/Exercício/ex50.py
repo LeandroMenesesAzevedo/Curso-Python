@@ -1,4 +1,8 @@
-for c in range (1, 7):
+s = 0
+for c in range (0, 6  ):
     n = int (input ('Digite um numero: '))
-    print (n)
-print ('fim')
+    if n % 2 == 0:
+        s += n 
+
+print ('A soma de todos os números pares são {}'. format(s))
+print ('FIM')
