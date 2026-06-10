@@ -5,6 +5,11 @@ palavra = frase.split()
 junto = ''.join(palavra) 
 inverso = ''
 
-for letra in range(len(letra) - 1, -1, -1):
-    inverso += [letra]
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
 print (junto , inverso)
+
+if (junto == inverso):
+    print('Essa frase é palíndrome')
+else:
+    print ('Essa frase não é palíndrome')    
