@@ -1,13 +1,17 @@
+from datetime import date
+
+atual = date.today().year
 maior = 0
 menor = 0
+
 for c in range (0, 7):
     idade = int(input('Digite o ano que você nasceu: '))
-    midade = 2026 - idade 
+    midade = atual - idade
+    
+    if midade >= 18:
+            maior += 1
+    else:
+            menor += 1
 
-if (midade >= 18):
-    maior += midade
-    print('São pessoas {} maior de idade.'.format(maior))
-else:
-    if (midade <= 18):
-        menor += midade
-        print('São pessoas {} menor de idade.'.format(menor))
+print ('Ao todo tivemos {} maior de idade'.format(maior))
+print ('Ao todo tivemos {} menor de idade'.format(menor))          
