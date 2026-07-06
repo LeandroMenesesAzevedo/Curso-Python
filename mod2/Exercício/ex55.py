@@ -18,6 +18,7 @@ for c in range (1 , 5):
         maioridadehomem = idade
         nomevelho = nome
 
+    
 
 media = somaid/c
 print ('A media de idade é : {}'.format(media))
