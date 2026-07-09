@@ -2,6 +2,7 @@ somaid = 0
 media = 0
 maioridadehomem = 0
 nomevelho = ''
+ttmulher = 0
 
 for c in range (1 , 5):
     print ('------ {}º Pessoa -----'.format(c))
@@ -17,9 +18,12 @@ for c in range (1 , 5):
     if sex in 'Mm' and idade > maioridadehomem:
         maioridadehomem = idade
         nomevelho = nome
+    if sex in 'Ff' and idade < 20:
+        ttmulher += 1
 
     
 
 media = somaid/c
 print ('A media de idade é : {}'.format(media))
 print ('O homem mais velho é {} com {}'.format(nomevelho, maioridadehomem))
+print ('Ao todo são {} mulheres com menos de 20 anos'.format(ttmulher))
