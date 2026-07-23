@@ -1,3 +1,11 @@
-from randon inport ranint
-
+from random import randint
 c = 1
+computador = randint (0 , 3)
+n = 0
+
+while n != computador:
+    n = int(input('Digite um valor: '))
+    if n == computador:
+        print ('PARABÉNS VOCÊ ACERTOU')
+    else:
+        print ('VOCÊ ERROU')
