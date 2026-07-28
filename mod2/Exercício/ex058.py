@@ -1,11 +1,12 @@
-c = 1
-while c <= 3 :
-    sexo = str (input('Digite seu sexo [ M/F ] -> ')).upper().strip()
+sexo = str (input('Digite seu sexo [ M/F ] -> ')).upper().strip()[0] #pegou a primeira letra
 
-    if sexo == 'M' and sexo == 'F':
-        print ('{}'.format(sexo))
-    else:
-        print ('ERRO')
+while sexo not in 'MmFf': #enquanto o sexo não for masculino e femenino faça
+    print(' DADOS INVÁLIDOS. INFORME NOVAMENTE ABAIXO: ')
+    sexo = str (input('Digite seu sexo [M/F] -> ')).upper().strip()[0] #pegou a primeira letra
+
+print ('O sexo informado foi {}'.format(sexo))
+
+
 
 
     
