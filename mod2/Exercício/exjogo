@@ -1,17 +1,21 @@
 from random import randint
 c = 1
-computador = randint (0 , 5)
+computador = randint (0 , 10)
 n = 0
-
-print('#'*50)
-print('JOGO DA ADIVINHAÇÃO')
+tentativa = 0
+print('########## JOGO DA ADIVINHAÇÃO ##########')
+print ('Será que você consegue adivinhar o número que estou pensando.')
+print ('Uma dica é um número de 0 a 10')
 print('_' *50)
-
+print('Vamos comerçar o jogo')
 while n != computador:
     n = int(input('Digite um valor: '))
     if n == computador:
-        print ('PARABÉNS VOCÊ ACERTOU')
+        print ('PARABÉNS VOCÊ ACERTOU, O NÚMERO DE TENTATIVAS FORAM {}'.format(tentativa))
     else:
-        print ('VOCÊ ERROU')
-
+        if n < computador:
+            print ('VOCÊ ERROU, É MAIS TENTE OUTRA VEZ')
+        else:
+            print ('VOCÊ ERROU, É MENOS TENTE OUTRA VEZ')
+        tentativa += 1
 print('_' *50)
