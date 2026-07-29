@@ -1,7 +1,11 @@
 from random import randint
 c = 1
-computador = randint (0 , 3)
+computador = randint (0 , 5)
 n = 0
+
+print('#'*50)
+print('JOGO DA ADIVINHAÇÃO')
+print('_' *50)
 
 while n != computador:
     n = int(input('Digite um valor: '))
@@ -9,3 +13,5 @@ while n != computador:
         print ('PARABÉNS VOCÊ ACERTOU')
     else:
         print ('VOCÊ ERROU')
+
+print('_' *50)
