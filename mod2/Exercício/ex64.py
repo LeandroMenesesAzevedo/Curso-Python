@@ -1,9 +1,8 @@
-n = int (input(' Digite um número [Digite o número 999 para finalizar]: '))
-f = 999
+n = 0
 soma = 0
-while n != f:
+cont = 0
+while n != 999:
     n = int (input(' Digite um número [Digite o número 999 para finalizar]: '))
-    print (' A quantidade de número digitado foi {} e a soma entre eles são: '.format(soma))
     soma += n
-    n += 1
-print('FIM')
+    cont += 1
+print (' A quantidade de número digitado foi {} e a soma entre eles são: {}'.format(cont, soma))
