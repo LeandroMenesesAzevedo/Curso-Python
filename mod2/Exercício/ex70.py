@@ -5,7 +5,7 @@ print(f'CASTRADO DE CLIENTE'.center(50))
 print('='*50)
 
 while True:
-    while resp in 'S/s':
+    #while resp in 'S/s':
         idade = int(input('Digite a idade: '))
         sexo = str(input('Digite o sexo [M/F]: '))
         if idade >= 18:
@@ -19,7 +19,9 @@ while True:
             masc += 1
         else:
             fem += 1
-
+        if resp in 'N/n':
+            break
+        
 print (f'A quantidade de pessoas maior de 18 anos são: {maior}')
 print (f'A quantidade de homens cadastrados são: {masc}')
 print (f'A quantidade de mulheres cadastradas são: {fem}')
