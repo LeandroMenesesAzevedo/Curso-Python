@@ -3,8 +3,8 @@ print('{:^30}'.format('Banco DIN'))
 print('='*30)
 valor = int(input('Digite o valor que deseja sacar: R$'))
 total = valor
-totalced = 0
 ced = 50
+totalced = 0
 while True:
     if total >= ced:
         total -= ced
